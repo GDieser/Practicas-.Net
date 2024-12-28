@@ -1,0 +1,59 @@
+<!--Comentarios-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+<body style="color: chocolate;">
+
+    <script>
+        for(let index = 0; index < 10; index++)
+        {
+            console.log(index);
+        }
+        
+        function saludar(){
+            //Tipos de variables:
+            //let algo = "";
+            //const algo2 = 2;
+
+            var user = document.getElementById("txtUser").value;
+            alert("Hola " + user);
+        }
+    </script>
+
+    <h1 style="color: blueviolet; font-size: 60px;">POCHI</h1>
+    <h2>Enciclopedia de Pocho</h2>
+    <p>Popopopopopo Chohohohoho</p>
+
+    <table>
+        <tr>
+            <td><img width="300px" src="https://uscdn.eltribunodejujuy.com/082021/1629252453036.webp?cw=420&ch=236&extw=jpg" alt="Pocho"></td>
+            <td><img width="300px" src="https://i.ytimg.com/vi/TzkWEUyYW80/sddefault.jpg" alt=""></td>
+            <td><img width="300px" src="https://uscdn.eltribunodejujuy.com/092024/1727406631932.jpg?&cw=1200&ch=630" alt=""></td>
+        </tr>
+    </table>
+    
+    <div>
+        <label for="">Hola 1</label>
+        <input type="text" id="txtUser">
+    </div>
+    
+    <div>
+        <label for="">Hola 2</label>
+    </div>
+    
+    <div>
+        <label for="">Hola 3</label>
+    </div>
+    <div>
+        <button onclick="saludar()">Hola 4</button>
+    </div>
+
+</body>
+</html>
