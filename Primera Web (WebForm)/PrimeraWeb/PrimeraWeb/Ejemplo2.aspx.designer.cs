@@ -11,7 +11,7 @@ namespace PrimeraWeb
 {
 
 
-    public partial class Ejemplo_ASPX
+    public partial class Ejemplo2
     {
     }
 }

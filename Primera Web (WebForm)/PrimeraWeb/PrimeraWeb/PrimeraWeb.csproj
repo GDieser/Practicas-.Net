@@ -131,6 +131,7 @@
     <Content Include="Default.aspx" />
     <Content Include="Ejemplo-ASPX.aspx" />
     <Content Include="Ejemplo-Html.html" />
+    <Content Include="Ejemplo2.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -224,6 +225,13 @@
     </Compile>
     <Compile Include="Ejemplo-ASPX.aspx.designer.cs">
       <DependentUpon>Ejemplo-ASPX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ejemplo2.aspx.cs">
+      <DependentUpon>Ejemplo2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ejemplo2.aspx.designer.cs">
+      <DependentUpon>Ejemplo2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

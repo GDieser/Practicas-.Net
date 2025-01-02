@@ -1,19 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Ejemplo-ASPX.aspx.cs" Inherits="PrimeraWeb.Ejemplo_ASPX" %>
+﻿
+<%@ Page Title="Ejemplo" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Ejemplo-ASPX.aspx.cs" Inherits="PrimeraWeb.Ejemplo_ASPX" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-</head>
-<body>
-    <h1>
-        HOLA
-    </h1>
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
-</body>
-</html>
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <main aria-labelledby="title">
+        <h2 id="title"><%: Title %>.</h2>
+        <h3>Hola.</h3>
+        
+    </main>
+</asp:Content>
