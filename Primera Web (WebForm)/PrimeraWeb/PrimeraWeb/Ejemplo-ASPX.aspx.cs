@@ -11,7 +11,14 @@ namespace PrimeraWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //txtNombre.Text = "German";
+        }
 
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            string nombre = txtNombre.Text;
+            string apellido = txtApellido.Value;
+            lblSaludo.Text = "Hola " + nombre + " " + apellido;
         }
     }
 }
