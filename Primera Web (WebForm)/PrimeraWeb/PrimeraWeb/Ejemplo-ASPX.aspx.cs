@@ -19,6 +19,8 @@ namespace PrimeraWeb
             string nombre = txtNombre.Text;
             string apellido = txtApellido.Value;
             lblSaludo.Text = "Hola " + nombre + " " + apellido;
+
+            Response.Redirect("Ejemplo-Html.html", false);
         }
     }
 }
