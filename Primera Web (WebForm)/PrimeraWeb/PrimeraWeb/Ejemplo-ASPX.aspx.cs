@@ -11,7 +11,10 @@ namespace PrimeraWeb
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //txtNombre.Text = "German";
+            if (!IsPostBack)
+            {
+                txtNombre.Text = "Ingrese nombre";
+            }
         }
 
         protected void Button1_Click(object sender, EventArgs e)
@@ -20,7 +23,12 @@ namespace PrimeraWeb
             string apellido = txtApellido.Value;
             lblSaludo.Text = "Hola " + nombre + " " + apellido;
 
-            Response.Redirect("Ejemplo-Html.html", false);
+            //Response.Redirect("Ejemplo-ASPX.aspx", false);
+        }
+
+        protected void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            lblbSecundario.Text = "Hola Munde";
         }
     }
 }
