@@ -23,7 +23,7 @@ namespace PrimeraWeb
             string apellido = txtApellido.Value;
             lblSaludo.Text = "Hola " + nombre + " " + apellido;
 
-            //Response.Redirect("Ejemplo-ASPX.aspx", false);
+            Response.Redirect("Default.aspx?nombre="+ nombre, false);
         }
 
         protected void txtNombre_TextChanged(object sender, EventArgs e)

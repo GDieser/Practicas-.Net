@@ -7,7 +7,7 @@
         <h3>Hola.</h3>
         <input ID="txtApellido" type="type" name="name" runat="server" value="" />
         
-        <asp:TextBox ID="txtNombre" runat="server" AutoPostBack="true" OnTextChanged="txtNombre_TextChanged"></asp:TextBox>
+        <asp:TextBox ID="txtNombre" runat="server" OnTextChanged="txtNombre_TextChanged"></asp:TextBox>
 
         <asp:Button ID="btnAceptar" runat="server" OnClick="Button1_Click" Height="26px" Text="Aceptar" Width="85px" />
         
@@ -16,6 +16,8 @@
         <div>
             <asp:Label ID="lblbSecundario" runat="server" Text=""></asp:Label>
         </div>
+
+        <a href="Default?id=3">Descripcion</a>
 
     </main>
 </asp:Content>
