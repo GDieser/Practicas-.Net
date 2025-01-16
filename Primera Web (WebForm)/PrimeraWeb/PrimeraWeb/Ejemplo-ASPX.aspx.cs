@@ -20,10 +20,14 @@ namespace PrimeraWeb
         protected void Button1_Click(object sender, EventArgs e)
         {
             string nombre = txtNombre.Text;
-            string apellido = txtApellido.Value;
-            lblSaludo.Text = "Hola " + nombre + " " + apellido;
+            string password = txtPassword.Text;
+            lblSaludo.Text = "Hola " + nombre;
 
-            Response.Redirect("Default.aspx?nombre="+ nombre, false);
+            Session.Add("Usuario", nombre);
+            Session.Add("pass", password);
+
+            //Response.Redirect("Default.aspx?nombre="+ nombre + "&pass=" + txtPassword.Text, false);
+            Response.Redirect("Default.aspx", false);
         }
 
         protected void txtNombre_TextChanged(object sender, EventArgs e)
