@@ -12,5 +12,7 @@ namespace dominio
         public string Modelo { get; set; }
         public int IdAuto { get; set; }
         public int Anio { get; set; }
+
+        public string Marca { get; set; }
     }
 }
