@@ -60,4 +60,13 @@
             </section>
         </div>
     </main>--%>
+    <asp:GridView runat="server" ID="dgvAutos" CssClass="table table-dark table-bordered" AutoGenerateColumns="false">
+        <Columns>
+            <asp:BoundField HeaderText="Modelo" DataField="Modelo" />
+            <asp:BoundField HeaderText="Color" DataField="Color" />
+            <asp:CheckBoxField HeaderText="Usado" DataField="Usado" />
+            <asp:CheckBoxField HeaderText="Importado" DataField="Importado" />
+        </Columns>
+    </asp:GridView>
+
 </asp:Content>
