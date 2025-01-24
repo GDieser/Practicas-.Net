@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\primeraweb\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|e:\\escritoriowin\\maxi c#\\curso lvl 3\\practicas-html-css-js-asp.net\\primera web (webform)\\primeraweb\\primeraweb\\autoform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|solutionrelative:primeraweb\\autoform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|e:\\escritoriowin\\maxi c#\\curso lvl 3\\practicas-html-css-js-asp.net\\primera web (webform)\\primeraweb\\primeraweb\\autoform.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|solutionrelative:primeraweb\\autoform.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\primeraweb\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|solutionrelative:primeraweb\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|e:\\escritoriowin\\maxi c#\\curso lvl 3\\practicas-html-css-js-asp.net\\primera web (webform)\\primeraweb\\primeraweb\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|solutionrelative:primeraweb\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD6731AB-0FF1-4535-8C3D-4FD226FD4FC0}|dominio\\dominio.csproj|e:\\escritoriowin\\maxi c#\\curso lvl 3\\practicas-html-css-js-asp.net\\primera web (webform)\\primeraweb\\dominio\\auto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AD6731AB-0FF1-4535-8C3D-4FD226FD4FC0}|dominio\\dominio.csproj|E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\dominio\\auto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD6731AB-0FF1-4535-8C3D-4FD226FD4FC0}|dominio\\dominio.csproj|solutionrelative:dominio\\auto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\primeraweb\\ejemplo-aspx.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|solutionrelative:primeraweb\\ejemplo-aspx.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\primeraweb\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|solutionrelative:primeraweb\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\primeraweb\\about.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
@@ -30,11 +38,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AutoForm.aspx.cs",
+              "DocumentMoniker": "E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\PrimeraWeb\\AutoForm.aspx.cs",
+              "RelativeDocumentMoniker": "PrimeraWeb\\AutoForm.aspx.cs",
+              "ToolTip": "E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\PrimeraWeb\\AutoForm.aspx.cs",
+              "RelativeToolTip": "PrimeraWeb\\AutoForm.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T21:18:58.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AutoForm.aspx",
+              "DocumentMoniker": "E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\PrimeraWeb\\AutoForm.aspx",
+              "RelativeDocumentMoniker": "PrimeraWeb\\AutoForm.aspx",
+              "ToolTip": "E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\PrimeraWeb\\AutoForm.aspx",
+              "RelativeToolTip": "PrimeraWeb\\AutoForm.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-01-24T21:03:18.983Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Auto.cs",
               "DocumentMoniker": "E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\dominio\\Auto.cs",
               "RelativeDocumentMoniker": "dominio\\Auto.cs",
@@ -42,12 +76,11 @@
               "RelativeToolTip": "dominio\\Auto.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAswBkAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T20:44:46.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T20:44:46.312Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Default.aspx",
               "DocumentMoniker": "E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\PrimeraWeb\\Default.aspx",
               "RelativeDocumentMoniker": "PrimeraWeb\\Default.aspx",
@@ -60,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Default.aspx.cs",
               "DocumentMoniker": "E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\PrimeraWeb\\Default.aspx.cs",
               "RelativeDocumentMoniker": "PrimeraWeb\\Default.aspx.cs",
@@ -73,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Ejemplo-ASPX.aspx.cs",
               "DocumentMoniker": "E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\PrimeraWeb\\Ejemplo-ASPX.aspx.cs",
               "RelativeDocumentMoniker": "PrimeraWeb\\Ejemplo-ASPX.aspx.cs",
@@ -81,12 +114,11 @@
               "RelativeToolTip": "PrimeraWeb\\Ejemplo-ASPX.aspx.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-02T14:25:14.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-02T14:25:14.335Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "About.aspx",
               "DocumentMoniker": "E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\PrimeraWeb\\About.aspx",
               "RelativeDocumentMoniker": "PrimeraWeb\\About.aspx",
@@ -94,8 +126,7 @@
               "RelativeToolTip": "PrimeraWeb\\About.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-12-29T13:25:04.29Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-29T13:25:04.29Z"
             }
           ]
         }

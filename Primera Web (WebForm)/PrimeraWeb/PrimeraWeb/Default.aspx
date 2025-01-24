@@ -60,13 +60,18 @@
             </section>
         </div>
     </main>--%>
-    <asp:GridView runat="server" ID="dgvAutos" CssClass="table table-dark table-bordered" AutoGenerateColumns="false">
-        <Columns>
-            <asp:BoundField HeaderText="Modelo" DataField="Modelo" />
-            <asp:BoundField HeaderText="Color" DataField="Color" />
-            <asp:CheckBoxField HeaderText="Usado" DataField="Usado" />
-            <asp:CheckBoxField HeaderText="Importado" DataField="Importado" />
-        </Columns>
-    </asp:GridView>
+    <div class="row">
+        <div class="col">
+            <asp:GridView runat="server" ID="dgvAutos" CssClass="table table-dark table-bordered" AutoGenerateColumns="false">
+                <Columns>
+                    <asp:BoundField HeaderText="Modelo" DataField="Modelo" />
+                    <asp:BoundField HeaderText="Color" DataField="Color" />
+                    <asp:CheckBoxField HeaderText="Usado" DataField="Usado" />
+                    <asp:CheckBoxField HeaderText="Importado" DataField="Importado" />
+                </Columns>
+            </asp:GridView>
+            <a href="AutoForm.aspx">Agregar</a>
+        </div>
+    </div>
 
 </asp:Content>
