@@ -13,7 +13,7 @@ namespace PrimeraWeb
         public string user { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            AutoNegocio negocio = new AutoNegocio();
+            //AutoNegocio negocio = new AutoNegocio();
             //if(Request.QueryString["nombre"] != null)
             //{
             //    string user = Request.QueryString["nombre"].ToString();
@@ -26,13 +26,25 @@ namespace PrimeraWeb
 
             //Operador ternario
             //user = Request.QueryString["nombre"] != null ? Request.QueryString["nombre"].ToString() : "";
+            
+            //Tupla
             user = Session["usuario"] != null ? Session["usuario"].ToString() : "";
 
+            //Arreglar
+            /*
+            if(Session["listaAutos"] == null)
+            {
+                AutoNegocio autoNegocio = new AutoNegocio();
+                Session.Add("listasAutos", autoNegocio.listar());
+            }
 
-            dgvAutos.DataSource = negocio.listar();
+            AutoNegocio autoNegocio = new AutoNegocio();
+            Session.Add("listasAutos", autoNegocio.listar());
+
+            dgvAutos.DataSource = Session["listaAutos"];
             dgvAutos.DataBind();
 
-
+            */
         }
     }
 }

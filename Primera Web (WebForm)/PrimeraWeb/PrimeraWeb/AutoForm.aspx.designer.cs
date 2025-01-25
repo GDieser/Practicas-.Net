@@ -33,13 +33,13 @@ namespace PrimeraWeb
         protected global::System.Web.UI.WebControls.TextBox txtModelo;
 
         /// <summary>
-        /// TextBox1 control.
+        /// txtDescripcion control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox txtDescripcion;
 
         /// <summary>
         /// ddlColore control.
@@ -87,13 +87,13 @@ namespace PrimeraWeb
         protected global::System.Web.UI.WebControls.RadioButton rdbImportado;
 
         /// <summary>
-        /// rdbNacionla control.
+        /// rdbNacional control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton rdbNacionla;
+        protected global::System.Web.UI.WebControls.RadioButton rdbNacional;
 
         /// <summary>
         /// btnAceptar control.

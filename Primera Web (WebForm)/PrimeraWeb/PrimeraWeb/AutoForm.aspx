@@ -14,14 +14,14 @@
             </div>
             <div class="mb-3">
                 <label for="txtDescripcion" class="form-label">Descripción</label>
-                <asp:TextBox runat="server" TextMode="MultiLine" ID="TextBox1" CssClass="form-control" />
+                <asp:TextBox runat="server" TextMode="MultiLine" ID="txtDescripcion" CssClass="form-control" />
             </div>
             <div class="mb-3">
                 <label for="txtColor" class="form-label">Color</label>
                 <asp:DropDownList ID="ddlColore" CssClass="form-select" runat="server"></asp:DropDownList>
             </div>
             <div class="mb-3">
-                <label for="txtfECHA" class="form-label">Fecha</label>
+                <label for="txtFecha" class="form-label">Fecha</label>
                 <asp:TextBox runat="server" TextMode="Date" ID="txtFecha" CssClass="form-control" />
             </div>
             <div class="form-check">
@@ -30,8 +30,8 @@
 
             </div>
             <div class="mb-3">
-                <asp:RadioButton ID="rdbImportado" Text="Importado" Checked="true" runat="server" GroupName="Importado"/>
-                <asp:RadioButton ID="rdbNacionla" Text="Nacional" runat="server" GroupName="Importado"/>
+                <asp:RadioButton ID="rdbImportado" AutoPostBack="true" OnCheckedChanged="rdbImportado_CheckedChanged" Text="Importado" Checked="true" runat="server" GroupName="Importado"/>
+                <asp:RadioButton ID="rdbNacional" AutoPostBack="true" OnCheckedChanged="rdbImportado_CheckedChanged" Text="Nacional" runat="server" GroupName="Importado"/>
             </div>
             <div class="mb-3">
                 <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" CssClass="btn btn-primary" OnClick="btnAceptar_Click" />
