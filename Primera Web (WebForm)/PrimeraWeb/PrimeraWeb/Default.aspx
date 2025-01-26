@@ -2,7 +2,7 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
-    <% if (user != "")
+    <%--<% if (user != "")
         { %>
     <h2>Ingresaste!</h2>
     <asp:Label Text="text" ID="lblUser" runat="server" />
@@ -13,7 +13,7 @@
 
     <h2>Debes loguearte</h2>
     <a href="Ejemplo-ASPX">Login</a>
-    <%} %>
+    <%} %>--%>
 
     <%--<main>
         <section class="row" aria-labelledby="aspnetTitle">
@@ -60,14 +60,21 @@
             </section>
         </div>
     </main>--%>
+    <style>
+        .oculto{
+            display: none;
+        }
+    </style>
     <div class="row">
         <div class="col">
-            <asp:GridView runat="server" ID="dgvAutos" CssClass="table table-dark table-bordered" AutoGenerateColumns="false">
+            <asp:GridView runat="server" ID="dgvAutos" OnSelectedIndexChanged="dgvAutos_SelectedIndexChanged" CssClass="table table-dark table-bordered" AutoGenerateColumns="false">
                 <Columns>
+                    <asp:BoundField HeaderText="IdAuto" DataField="IdAuto" HeaderStyle-CssClass="oculto" ItemStyle-CssClass="oculto" />
                     <asp:BoundField HeaderText="Modelo" DataField="Modelo" />
                     <asp:BoundField HeaderText="Color" DataField="Color" />
                     <asp:CheckBoxField HeaderText="Usado" DataField="Usado" />
                     <asp:CheckBoxField HeaderText="Importado" DataField="Importado" />
+                    <asp:CommandField ShowSelectButton="true" SelectText="Seleccionar" HeaderText="Acción" />
                 </Columns>
             </asp:GridView>
             <a href="AutoForm.aspx">Agregar</a>

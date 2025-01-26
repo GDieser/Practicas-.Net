@@ -28,23 +28,28 @@ namespace PrimeraWeb
             //user = Request.QueryString["nombre"] != null ? Request.QueryString["nombre"].ToString() : "";
             
             //Tupla
-            user = Session["usuario"] != null ? Session["usuario"].ToString() : "";
+            //user = Session["usuario"] != null ? Session["usuario"].ToString() : "";
 
             //Arreglar
-            /*
+            
             if(Session["listaAutos"] == null)
             {
                 AutoNegocio autoNegocio = new AutoNegocio();
-                Session.Add("listasAutos", autoNegocio.listar());
+                Session.Add("listaAutos", autoNegocio.listar());
             }
 
-            AutoNegocio autoNegocio = new AutoNegocio();
-            Session.Add("listasAutos", autoNegocio.listar());
+            //AutoNegocio autoNegocio = new AutoNegocio();
+            //Session.Add("listasAutos", autoNegocio.listar());
 
             dgvAutos.DataSource = Session["listaAutos"];
             dgvAutos.DataBind();
 
-            */
+            
+        }
+
+        protected void dgvAutos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            var algo = dgvAutos.SelectedRow.Cells[0];
         }
     }
 }
