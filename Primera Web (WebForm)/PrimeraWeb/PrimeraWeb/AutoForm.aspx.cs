@@ -18,6 +18,20 @@ namespace PrimeraWeb
                 ddlColore.Items.Add("Blanco");
                 ddlColore.Items.Add("Azul");
             }
+
+            if (Request.QueryString["id"] != null)
+            {
+                int id = int.Parse(Request.QueryString["id"].ToString());
+
+                List<Auto> temporal = (List<Auto>)Session["listaAutos"];
+
+                Auto seleccionado = temporal.Find(x => x.IdAuto == id);
+                txtModelo.Text = seleccionado.Modelo;
+                txtId.Text = seleccionado.IdAuto.ToString();
+
+                txtId.ReadOnly = true;
+            }
+
         }
 
         protected void btnAceptar_Click(object sender, EventArgs e)

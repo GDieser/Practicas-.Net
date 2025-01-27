@@ -49,7 +49,10 @@ namespace PrimeraWeb
 
         protected void dgvAutos_SelectedIndexChanged(object sender, EventArgs e)
         {
-            var algo = dgvAutos.SelectedRow.Cells[0];
+           // var algo = dgvAutos.SelectedRow.Cells[0];
+            var id = dgvAutos.SelectedDataKey.Value.ToString();
+
+            Response.Redirect("AutoForm.aspx?=IdAuto" + id);
         }
     }
 }

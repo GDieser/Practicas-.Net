@@ -67,9 +67,9 @@
     </style>
     <div class="row">
         <div class="col">
-            <asp:GridView runat="server" ID="dgvAutos" OnSelectedIndexChanged="dgvAutos_SelectedIndexChanged" CssClass="table table-dark table-bordered" AutoGenerateColumns="false">
+            <asp:GridView runat="server" ID="dgvAutos" DataKeyNames="IdAuto" OnSelectedIndexChanged="dgvAutos_SelectedIndexChanged" CssClass="table table-dark table-bordered" AutoGenerateColumns="false">
                 <Columns>
-                    <asp:BoundField HeaderText="IdAuto" DataField="IdAuto" HeaderStyle-CssClass="oculto" ItemStyle-CssClass="oculto" />
+<%--                    <asp:BoundField HeaderText="IdAuto" DataField="IdAuto" HeaderStyle-CssClass="oculto" ItemStyle-CssClass="oculto" />--%>
                     <asp:BoundField HeaderText="Modelo" DataField="Modelo" />
                     <asp:BoundField HeaderText="Color" DataField="Color" />
                     <asp:CheckBoxField HeaderText="Usado" DataField="Usado" />
