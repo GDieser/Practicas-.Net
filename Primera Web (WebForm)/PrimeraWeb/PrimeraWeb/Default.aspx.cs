@@ -52,7 +52,7 @@ namespace PrimeraWeb
            // var algo = dgvAutos.SelectedRow.Cells[0];
             var id = dgvAutos.SelectedDataKey.Value.ToString();
 
-            Response.Redirect("AutoForm.aspx?=IdAuto" + id);
+            Response.Redirect("AutoForm.aspx?id=" + id);
         }
     }
 }
