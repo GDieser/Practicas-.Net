@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\primeraweb\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|e:\\escritoriowin\\maxi c#\\curso lvl 3\\practicas-html-css-js-asp.net\\primera web (webform)\\primeraweb\\primeraweb\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|solutionrelative:primeraweb\\default.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|solutionrelative:primeraweb\\autoform.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|e:\\escritoriowin\\maxi c#\\curso lvl 3\\practicas-html-css-js-asp.net\\primera web (webform)\\primeraweb\\primeraweb\\autoform.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\primeraweb\\autoform.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{69A7E5F8-F2EE-4BE4-BE37-B8F04D200DEA}|PrimeraWeb\\PrimeraWeb.csproj|solutionrelative:primeraweb\\autoform.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -42,8 +42,7 @@
               "RelativeToolTip": "PrimeraWeb\\AutoForm.aspx.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T21:18:58.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T21:18:58.284Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "PrimeraWeb\\AutoForm.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-01-24T21:03:18.983Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T21:03:18.983Z"
             },
             {
               "$type": "Document",
@@ -68,8 +66,7 @@
               "RelativeToolTip": "dominio\\Auto.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-17T20:44:46.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-17T20:44:46.312Z"
             },
             {
               "$type": "Document",
@@ -81,8 +78,7 @@
               "RelativeToolTip": "PrimeraWeb\\Default.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-01-15T13:24:49.969Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-15T13:24:49.969Z"
             },
             {
               "$type": "Document",
@@ -92,7 +88,7 @@
               "RelativeDocumentMoniker": "PrimeraWeb\\Default.aspx.cs",
               "ToolTip": "E:\\EscritorioWin\\Maxi C#\\Curso LVL 3\\Practicas-HTML-CSS-JS-ASP.NET\\Primera Web (WebForm)\\PrimeraWeb\\PrimeraWeb\\Default.aspx.cs",
               "RelativeToolTip": "PrimeraWeb\\Default.aspx.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAQwDYAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-13T20:03:08.588Z",
               "EditorCaption": ""
