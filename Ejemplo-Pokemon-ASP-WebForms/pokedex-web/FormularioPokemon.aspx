@@ -1,0 +1,39 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FormularioPokemon.aspx.cs" Inherits="pokedex_web.FormularioPokemon" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <div class="row">
+        <div class="col-6">
+            <div class="mb-3">
+                <label for="txtId" class="form-label">Id</label>
+                <asp:TextBox ID="txtID" runat="server" CssClass="form-control" />
+            </div>
+            <div class="mb-3">
+                <label for="txtNombre" class="form-label">Nombre</label>
+                <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control" />
+            </div>
+            <div class="mb-3">
+                <label for="txtNumero" class="form-label">Numero</label>
+                <asp:TextBox ID="txtNumero" runat="server" CssClass="form-control" />
+            </div>
+            <div class="mb-3">
+                <label for="txtDescripcion" class="form-label">Descripción</label>
+                <asp:TextBox ID="txtDescripcion" runat="server" CssClass="form-control" />
+            </div>
+            <div class="mb-3">
+                <label for="ddlTipo" class="form-label">Tipo</label>
+                <asp:DropDownList ID="ddlTipo" runat="server" CssClass="form-select"></asp:DropDownList>
+            </div>
+            <div class="mb-3">
+                <label for="ddlDebilidad" class="form-label">Debilidad</label>
+                <asp:DropDownList ID="ddlDebilidad" runat="server" CssClass="form-select"></asp:DropDownList>
+            </div>
+
+            <div class="mb-3">
+                <asp:Button ID="btnAceptar" runat="server" Text="Acepptar" CssClass="btn btn-primary" OnClick="btnAceptar_Click" />
+                <a href="PokemonsLista.aspx">Cancelar</a>
+            </div>
+        </div>
+    </div>
+</asp:Content>

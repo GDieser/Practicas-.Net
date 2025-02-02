@@ -30,7 +30,7 @@
             <ItemTemplate>
                 <div class="col">
                     <div class="card">
-                        <img src="<%#Eval("UrlImagen") %>" class="card-img-top" alt="...">
+                        <img src="<%#Eval("UrlImagen") %>" class="col-10" alt="...">
                         <div class="card-body">
                             <h5 class="card-title"><%#Eval("Nombre") %></h5>
                             <p class="card-text"><%#Eval("Descripcion") %>.</p>
