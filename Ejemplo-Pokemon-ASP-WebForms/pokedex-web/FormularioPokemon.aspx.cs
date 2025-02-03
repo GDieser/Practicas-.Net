@@ -18,5 +18,10 @@ namespace pokedex_web
         {
 
         }
+
+        protected void txtImagenUrl_TextChanged(object sender, EventArgs e)
+        {
+            imgPokemon.ImageUrl= txtImagenUrl.Text;
+        }
     }
 }

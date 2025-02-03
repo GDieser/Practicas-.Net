@@ -3,6 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
     <div class="row">
         <div class="col-6">
             <div class="mb-3">
@@ -18,10 +19,6 @@
                 <asp:TextBox ID="txtNumero" runat="server" CssClass="form-control" />
             </div>
             <div class="mb-3">
-                <label for="txtDescripcion" class="form-label">Descripción</label>
-                <asp:TextBox ID="txtDescripcion" runat="server" CssClass="form-control" />
-            </div>
-            <div class="mb-3">
                 <label for="ddlTipo" class="form-label">Tipo</label>
                 <asp:DropDownList ID="ddlTipo" runat="server" CssClass="form-select"></asp:DropDownList>
             </div>
@@ -35,5 +32,25 @@
                 <a href="PokemonsLista.aspx">Cancelar</a>
             </div>
         </div>
+
+        <div class="col-6">
+            <div class="mb-3">
+                <label for="txtDescripcion" class="form-label">Descripción</label>
+                <asp:TextBox ID="txtDescripcion" runat="server" CssClass="form-control" />
+            </div>
+            <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                <ContentTemplate>
+                    <div class="mb-3">
+                        <label for="txtImagenUrl" class="form-label">URL Imagen</label>
+                        <asp:TextBox ID="txtImagenUrl" runat="server" CssClass="form-control"
+                            AutoPostBack="true" OnTextChanged="txtImagenUrl_TextChanged" />
+                    </div>
+                    <asp:Image ImageUrl="https://www.shutterstock.com/image-vector/default-image-icon-vector-missing-600nw-2079504220.jpg"
+                        ID="imgPokemon" runat="server" Width="60%" />
+                </ContentTemplate>
+            </asp:UpdatePanel>
+        </div>
     </div>
 </asp:Content>
+
+
