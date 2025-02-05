@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <h1>Lista de Pokemons</h1>
-    <asp:GridView ID="dgvPokemons" runat="server" CssClass="table" AutoGenerateColumns="false"
+    <asp:GridView ID="dgvPokemons" runat="server" DataKeyNames="Id" CssClass="table" AutoGenerateColumns="false"
         OnSelectedIndexChanged="dgvPokemons_SelectedIndexChanged"
         OnPageIndexChanging="dgvPokemons_PageIndexChanging"
         AllowPaging="true" PageSize="5">
