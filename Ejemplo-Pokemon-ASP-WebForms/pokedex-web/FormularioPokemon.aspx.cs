@@ -18,6 +18,7 @@ namespace pokedex_web
             {
                 if (!IsPostBack)
                 {
+                    //Configuracion inicial
                     ElementoNegocio negocio = new ElementoNegocio();
                     List<Elemento> lista = negocio.listar();
 
@@ -32,6 +33,13 @@ namespace pokedex_web
                     ddlDebilidad.DataBind();
 
                 }
+
+                //Configuracion si estamos modificando
+                if (Request.QueryString["id"] != null)
+                { 
+                    PokemonNegocio negocio = new PokemonNegocio();
+                }
+
             }
             catch (Exception ex)
             {
