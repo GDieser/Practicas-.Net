@@ -35,9 +35,26 @@ namespace pokedex_web
                 }
 
                 //Configuracion si estamos modificando
-                if (Request.QueryString["id"] != null)
+                string id = Request.QueryString["id"] != null ? Request.QueryString["id"].ToString() : "";
+                if (id != "" && !IsPostBack)
                 { 
                     PokemonNegocio negocio = new PokemonNegocio();
+                    //List<Pokemon> lista = negocio.listar(id);
+                    //Pokemon seleccionado = lista[0];
+
+                    Pokemon seleccionado = (negocio.listar(id)[0]);
+
+                    //Precarga de datos
+                    txtID.Text = id;
+                    txtNombre.Text = seleccionado.Nombre;
+                    txtDescripcion.Text = seleccionado.Descripcion;
+                    txtImagenUrl.Text = seleccionado.UrlImagen;
+                    txtNumero.Text = seleccionado.Numero.ToString();
+
+                    ddlTipo.SelectedValue = seleccionado.Tipo.Id.ToString();
+                    ddlDebilidad.SelectedValue = seleccionado.Debilidad.Id.ToString();
+                    txtImagenUrl_TextChanged(sender, e);
+
                 }
 
             }
@@ -66,8 +83,16 @@ namespace pokedex_web
                 nuevo.Tipo.Id = int.Parse(ddlTipo.SelectedValue);
                 nuevo.Debilidad = new Elemento();
                 nuevo.Debilidad.Id = int.Parse(ddlDebilidad.SelectedValue);
+
+                if (Request.QueryString["id"] != null)
+                {
+                    negocio.modificarConSp(nuevo);
+                }
+                else
+                {
+                    negocio.agregarConSP(nuevo);
+                }
                 
-                negocio.agregarConSP(nuevo);
                 Response.Redirect("PokemonsLista.aspx", false);
 
             }

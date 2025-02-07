@@ -25,7 +25,7 @@ namespace negocio
                 comando.CommandText = "Select Numero, Nombre, P.Descripcion, UrlImagen, E.Descripcion Tipo, D.Descripcion Debilidad, P.IdTipo, P.IdDebilidad, P.Id From POKEMONS P, ELEMENTOS E, ELEMENTOS D Where E.Id = P.IdTipo And D.Id = P.IdDebilidad And P.Activo = 1";
                 if(id != "")
                 {
-                    comando.CommandText += " and P.Od = " + id;
+                    comando.CommandText += " and P.Id = " + id;
                 }
                 comando.Connection = conexion;
 
@@ -303,6 +303,33 @@ namespace negocio
             }
         }
 
+        public void modificarConSp(Pokemon nuevo)
+        {
+            AccesoDatos datos = new AccesoDatos();
 
+            try
+            {
+                datos.setearProcedimiento("storedModificarPokemon");
+
+                datos.setearParametro("@numero", nuevo.Numero);
+                datos.setearParametro("@nombre", nuevo.Nombre);
+                datos.setearParametro("@desc", nuevo.Descripcion);
+                datos.setearParametro("@img", nuevo.UrlImagen);
+                datos.setearParametro("@idTipo", nuevo.Tipo.Id);
+                datos.setearParametro("@idDebilidad", nuevo.Debilidad.Id);
+                datos.setearParametro("@id", nuevo.Id);
+                //datos.setearParametro("@idEvolucion", null);
+
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
     }
 }
