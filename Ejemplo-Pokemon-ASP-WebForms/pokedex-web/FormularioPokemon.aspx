@@ -28,7 +28,7 @@
             </div>
 
             <div class="mb-3">
-                <asp:Button ID="btnAceptar" runat="server" Text="Acepptar" CssClass="btn btn-primary" OnClick="btnAceptar_Click" />
+                <asp:Button ID="btnAceptar" runat="server" Text="Aceptar" CssClass="btn btn-primary" OnClick="btnAceptar_Click" />
                 <a href="PokemonsLista.aspx">Cancelar</a>
             </div>
         </div>
@@ -49,6 +49,27 @@
                         ID="imgPokemon" runat="server" Width="60%" />
                 </ContentTemplate>
             </asp:UpdatePanel>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                <ContentTemplate>
+                    <div class="mb-3">
+                        <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" CssClass="btn btn-danger" />
+                    </div>
+
+                    <%if (ConfirmaEliminacion)
+                        {%>
+                    <div class="mb-3">
+                        <asp:CheckBox Text="Confirmar Eliminación" ID="cboxConfirmarEliminacion" runat="server" />
+                        <asp:Button ID="btnConfirmarEliminacion" OnClick="btnConfirmarEliminacion_Click" runat="server" Text="Eliminar" CssClass="btn btn-outline-danger" />
+                    </div>
+                    <% } %>
+                </ContentTemplate>
+            </asp:UpdatePanel>
+
+
         </div>
     </div>
 </asp:Content>
