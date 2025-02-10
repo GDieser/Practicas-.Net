@@ -12,7 +12,9 @@
             <asp:BoundField HeaderText="Numero" DataField="Numero" />
             <asp:BoundField HeaderText="Tipo" DataField="Tipo.Descripcion" />
             <asp:BoundField HeaderText="Debilidad" DataField="Debilidad.Descripcion" />
+            <asp:CheckboxField HeaderText="Activo" DataField="Activo" />
             <asp:CommandField HeaderText="Acción" ShowSelectButton="true" SelectText="✍️" />
+            
         </Columns>    
     </asp:GridView>
     <a href="FormularioPokemon.aspx" class="btn btn-primary">Agregar</a>
