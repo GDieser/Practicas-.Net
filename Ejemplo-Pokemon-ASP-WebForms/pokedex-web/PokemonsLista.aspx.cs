@@ -11,8 +11,10 @@ namespace pokedex_web
 {
     public partial class PokemonsLista : System.Web.UI.Page
     {
+        public bool FiltroAvanzado { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
+            FiltroAvanzado = false;
             PokemonNegocio negocio  = new PokemonNegocio();
             Session.Add("listaPokemon", negocio.listarConSP());
             dgvPokemons.DataSource = Session["listaPokemon"];
@@ -38,6 +40,12 @@ namespace pokedex_web
             List<Pokemon> listaFiltrada = lista.FindAll(x => x.Nombre.ToUpper().Contains(txtFiltro.Text.ToUpper()));
             dgvPokemons.DataSource= listaFiltrada;
             dgvPokemons.DataBind();
+        }
+
+        protected void chkAvanzado_CheckedChanged(object sender, EventArgs e)
+        {
+            FiltroAvanzado = chkAvanzado.Checked;
+            txtFiltro.Enabled = !FiltroAvanzado;
         }
     }
 }
