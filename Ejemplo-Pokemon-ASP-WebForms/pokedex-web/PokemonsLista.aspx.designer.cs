@@ -33,13 +33,22 @@ namespace pokedex_web
         protected global::System.Web.UI.WebControls.CheckBox chkAvanzado;
 
         /// <summary>
+        /// lblCampo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblCampo;
+
+        /// <summary>
         /// ddlCampo control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ddlCampo;
+        protected global::System.Web.UI.WebControls.DropDownList ddlCampo;
 
         /// <summary>
         /// ddlCriterio control.
@@ -58,6 +67,15 @@ namespace pokedex_web
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtFiltroAvanzado;
+
+        /// <summary>
+        /// ddlEstado control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlEstado;
 
         /// <summary>
         /// btnBuscar control.

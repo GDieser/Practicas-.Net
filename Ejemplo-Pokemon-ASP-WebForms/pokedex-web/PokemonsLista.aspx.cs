@@ -14,7 +14,7 @@ namespace pokedex_web
         public bool FiltroAvanzado { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            FiltroAvanzado = false;
+            FiltroAvanzado = chkAvanzado.Checked;
             PokemonNegocio negocio  = new PokemonNegocio();
             Session.Add("listaPokemon", negocio.listarConSP());
             dgvPokemons.DataSource = Session["listaPokemon"];
@@ -46,6 +46,40 @@ namespace pokedex_web
         {
             FiltroAvanzado = chkAvanzado.Checked;
             txtFiltro.Enabled = !FiltroAvanzado;
+        }
+
+        protected void ddlCampo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ddlCriterio.Items.Clear();
+
+            if(ddlCampo.SelectedItem.ToString() == "Número")
+            {
+                ddlCriterio.Items.Add("Igual a");
+                ddlCriterio.Items.Add("Mayor a");
+                ddlCriterio.Items.Add("Menor a");
+            }
+            else
+            {
+                ddlCriterio.Items.Add("Contiene");
+                ddlCriterio.Items.Add("Comienza con");
+                ddlCriterio.Items.Add("Termina con");
+            }
+        }
+
+        protected void btnBuscar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                PokemonNegocio negocio = new PokemonNegocio();
+                dgvPokemons.DataSource = negocio.filtrar(ddlCampo.SelectedItem.ToString(),
+                    ddlCriterio.SelectedItem.ToString(), txtFiltroAvanzado.Text, ddlEstado.SelectedItem.ToString());
+                dgvPokemons.DataBind();
+            }
+            catch (Exception ex)
+            {
+                Session.Add("Error", ex);
+                throw;
+            }
         }
     }
 }

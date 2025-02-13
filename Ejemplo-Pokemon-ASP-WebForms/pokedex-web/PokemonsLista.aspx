@@ -13,9 +13,9 @@
         </div>
     </div>
 
-    <div class="col-6" style="display: flex; flex-direction: column; justify-content: flex-end" >
+    <div class="col-6" style="display: flex; flex-direction: column; justify-content: flex-end">
         <div class="mb-3">
-            <asp:CheckBox Text="Filtro Avanzado" CssClass="" ID="chkAvanzado" 
+            <asp:CheckBox Text="Filtro Avanzado" CssClass="" ID="chkAvanzado"
                 AutoPostBack="true" OnCheckedChanged="chkAvanzado_CheckedChanged" runat="server" />
         </div>
     </div>
@@ -25,8 +25,8 @@
     <div class="row">
         <div class="col-3">
             <div class="mb-3">
-                <asp:Label Text="Campo" ID="ddlCampo" runat="server" />
-                <asp:DropDownList runat="server" CssClass="form-control">
+                <asp:Label Text="Campo" ID="lblCampo" runat="server" />
+                <asp:DropDownList runat="server" CssClass="form-control" ID="ddlCampo" AutoPostBack="true" OnSelectedIndexChanged="ddlCampo_SelectedIndexChanged">
                     <asp:ListItem Text="Nombre" />
                     <asp:ListItem Text="Tipo" />
                     <asp:ListItem Text="Número" />
@@ -48,7 +48,7 @@
         <div class="col-3">
             <div class="mb-3">
                 <asp:Label Text="Estado" runat="server" />
-                <asp:DropDownList runat="server" CssClass="form-control">
+                <asp:DropDownList runat="server" ID="ddlEstado" CssClass="form-control">
                     <asp:ListItem Text="Todos" />
                     <asp:ListItem Text="Activos" />
                     <asp:ListItem Text="Inactivo" />
@@ -59,11 +59,11 @@
     <div class="row">
         <div class="col-3">
             <div class="mb-3">
-                <asp:Button Text="Buscar" CssClass="btn btn-primary" ID="btnBuscar" runat="server" />
+                <asp:Button Text="Buscar" CssClass="btn btn-primary" OnClick="btnBuscar_Click" ID="btnBuscar" runat="server" />
             </div>
         </div>
     </div>
-    <% } %> 
+    <% } %>
 
     <asp:GridView ID="dgvPokemons" runat="server" DataKeyNames="Id" CssClass="table" AutoGenerateColumns="false"
         OnSelectedIndexChanged="dgvPokemons_SelectedIndexChanged"
