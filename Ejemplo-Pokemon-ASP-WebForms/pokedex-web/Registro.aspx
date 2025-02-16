@@ -14,7 +14,7 @@
                 <label class="form-label">Password</label>
                 <asp:TextBox runat="server" CssClass="form-control" ID="txtPassword" TextMode="Password" />
             </div>
-            <asp:Button Text="Resgistrate" CssClass="btn btn-primary" ID="btnRegistrarse" runat="server" />
+            <asp:Button Text="Resgistrate" CssClass="btn btn-primary" ID="btnRegistrarse" OnClick="btnRegistrarse_Click" runat="server" />
             <a href="/">Cancelar</a>
         </div>
     </div>
