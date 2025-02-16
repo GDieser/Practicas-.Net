@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using dominio;
+using negocio;
 
 namespace pokedex_web
 {
@@ -20,8 +21,17 @@ namespace pokedex_web
             try
             {
                 Trainee user = new Trainee();
+                TraineeNegocio traineeNegocio = new TraineeNegocio();
+                EmailService emailService = new EmailService();
+
                 user.Email = txtEmail.Text;
                 user.Pass = txtPassword.Text;
+                int id = traineeNegocio.insertNuevo(user);
+
+                emailService.armarCorreo(user.Email, "Bienvenido Papu", "Hola papu, bueno, y?");
+                emailService.enviarEmail();
+
+                Response.Redirect("Default.aspx", false);
 
             }
             catch (Exception ex)

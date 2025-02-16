@@ -17,16 +17,18 @@ namespace negocio
         public EmailService()
         {
             server = new SmtpClient();
-            server.Credentials = new NetworkCredential("ff01e6ec42e120", "78e6c7a7b640fb");
+            server.Credentials = new NetworkCredential("d40bac5f1f013f", "ca12f9bb6f39c9");
             server.EnableSsl = true;
-            server.Port = 2525;
-            server.Host = "smtp.mailtrap.io";
+            server.Port = 587;
+            server.Host = "sandbox.smtp.mailtrap.io";
+            //server.UseDefaultCredentials = false;
+
         }
 
         public void armarCorreo(string emailDestino, string asunto, string cuerpo)
         {
             email = new MailMessage();
-            email.From = new MailAddress("noresponder@pokedexweb.com");
+            email.From = new MailAddress("from@example.com");
             email.To.Add(emailDestino);
             email.Subject = asunto;
             email.IsBodyHtml = true;
@@ -37,15 +39,19 @@ namespace negocio
 
         public void enviarEmail()
         {
+            if (email == null)
+                throw new InvalidOperationException("El email no ha sido inicializado. Llama a armarCorreo() antes.");
+
             try
             {
                 server.Send(email);
             }
-            catch (Exception ex)
+            catch (SmtpException smtpEx)
             {
-                throw ex;
+                throw new Exception("Error al enviar el correo: " + smtpEx.Message, smtpEx);
             }
         }
 
     }
+
 }

@@ -19,13 +19,18 @@ namespace negocio
 				datos.setearParametro("@email", nuevo.Email);
 				datos.setearParametro("@pass", nuevo.Pass);
 
-				return 1;
+                return datos.ejecutarAccionScalar();
+
 			}
 			catch (Exception ex)
 			{
 
 				throw ex;
 			} 
+			finally
+			{
+				datos.cerrarConexion();
+			}
         }
     }
 }
