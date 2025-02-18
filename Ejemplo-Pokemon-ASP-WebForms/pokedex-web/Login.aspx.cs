@@ -25,15 +25,24 @@ namespace pokedex_web
             {
                 trainee.Email = txtEmail.Text;
                 trainee.Pass = txtPassword.Text;
+
                 if(negocio.Login(trainee))
                 {
                     Session.Add("trainee", trainee);
+                    Response.Redirect("MiPerfil.aspx", false);
                 }
+                else
+                {
+                    Session.Add("error", "User o Pass incorrecto");
+                    Response.Redirect("Error.aspx");
+                }
+                
             }
             catch (Exception ex)
             {
 
-                Session.Add("error", ex);
+                Session.Add("error", ex.ToString());
+                Response.Redirect("Error.aspx");
             }
         }
     }

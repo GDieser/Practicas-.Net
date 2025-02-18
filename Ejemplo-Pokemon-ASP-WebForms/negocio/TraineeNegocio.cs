@@ -38,7 +38,7 @@ namespace negocio
 			AccesoDatos datos = new AccesoDatos();
 			try
 			{
-				datos.setearConsulta("SELECT email, pass, admin FROM USER WHERE email = @email AND pass = @pass");
+				datos.setearConsulta("SELECT id, email, pass, admin FROM USERS WHERE email = @email AND pass = @pass");
 				datos.setearParametro("@email", trainee.Email);
                 datos.setearParametro("@pass", trainee.Pass);
 				datos.ejecutarLectura();
