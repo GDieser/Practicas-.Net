@@ -26,7 +26,8 @@ namespace pokedex_web
 
                 user.Email = txtEmail.Text;
                 user.Pass = txtPassword.Text;
-                int id = traineeNegocio.insertNuevo(user);
+                user.Id = traineeNegocio.insertNuevo(user);
+                Session.Add("trainee", user);
 
                 emailService.armarCorreo(user.Email, "Bienvenido Papu", "Hola papu, bueno, y?");
                 emailService.enviarEmail();
