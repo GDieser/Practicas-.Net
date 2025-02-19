@@ -14,12 +14,23 @@ namespace pokedex_web
         public bool FiltroAvanzado { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            FiltroAvanzado = chkAvanzado.Checked;
-            PokemonNegocio negocio  = new PokemonNegocio();
-            Session.Add("listaPokemon", negocio.listarConSP());
-            dgvPokemons.DataSource = Session["listaPokemon"];
-            dgvPokemons.DataBind();
 
+            if (!Seguridad.esAdmin(Session["trainee"]))
+            {
+                Session.Add("error", "Se requiere permiso de admin");
+                Response.Redirect("Error.aspx");
+            }
+
+            FiltroAvanzado = chkAvanzado.Checked;
+
+            if(!IsPostBack)
+            {
+                PokemonNegocio negocio = new PokemonNegocio();
+                Session.Add("listaPokemon", negocio.listarConSP());
+                dgvPokemons.DataSource = Session["listaPokemon"];
+                dgvPokemons.DataBind();
+
+            }
         }
 
         protected void dgvPokemons_SelectedIndexChanged(object sender, EventArgs e)
