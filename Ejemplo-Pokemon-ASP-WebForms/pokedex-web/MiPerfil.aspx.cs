@@ -18,5 +18,27 @@ namespace pokedex_web
             
 
         }
+
+        protected void btnGuardar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                TraineeNegocio negocio = new TraineeNegocio();
+
+                Trainee user = (Trainee)Session["trainee"];
+                string ruta = Server.MapPath("./Images/");
+                txtImagen.PostedFile.SaveAs(ruta + "perfil-" + user.Id + ".jpg");
+
+                user.ImagenPerfil = "perfil-" + user.Id + ".jpg";
+
+                negocio.actualizar(user);
+
+            }
+            catch (Exception ex)
+            {
+
+                Session.Add("error", ex.ToString());
+            }
+        }
     }
 }

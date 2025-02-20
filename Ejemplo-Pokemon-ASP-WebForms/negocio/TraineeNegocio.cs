@@ -9,6 +9,28 @@ namespace negocio
 {
     public class TraineeNegocio
     {
+        public void actualizar(Trainee user)
+        {
+			AccesoDatos datos = new AccesoDatos();
+			try
+			{
+				datos.setearConsulta("UPDATE USERS SET imagenPerfil = @imagen WHERE Id = @id");
+				datos.setearParametro("@imagen", user.ImagenPerfil);
+				datos.setearParametro("@id", user.Id);
+				datos.ejecutarAccion();
+
+			}
+			catch (Exception ex)
+			{
+
+				throw ex;
+			}
+			finally
+			{
+				datos.cerrarConexion();
+			}
+        }
+
         public int insertNuevo(Trainee nuevo)
         {
 			AccesoDatos datos = new AccesoDatos();
