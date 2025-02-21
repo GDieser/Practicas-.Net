@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using dominio;
 using negocio;
 
 namespace pokedex_web
@@ -18,6 +19,15 @@ namespace pokedex_web
                 {
                     Response.Redirect("Login.aspx", false);
                 }
+            }
+
+            if (Seguridad.sesionActiva(Session["trainee"]))
+            {
+                imgPerfil.ImageUrl = "~/Images/" + ((Trainee)Session["trainee"]).ImagenPerfil;
+            }
+            else
+            {
+                imgPerfil.ImageUrl = "https://simg.nicepng.com/png/small/202-2022264_usuario-annimo-usuario-annimo-user-icon-png-transparent.png";
             }
         }
 

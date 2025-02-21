@@ -24,7 +24,7 @@ namespace pokedex_web
             try
             {
                 TraineeNegocio negocio = new TraineeNegocio();
-
+                //Escribir img
                 Trainee user = (Trainee)Session["trainee"];
                 string ruta = Server.MapPath("./Images/");
                 txtImagen.PostedFile.SaveAs(ruta + "perfil-" + user.Id + ".jpg");
@@ -32,6 +32,10 @@ namespace pokedex_web
                 user.ImagenPerfil = "perfil-" + user.Id + ".jpg";
 
                 negocio.actualizar(user);
+
+                //Leer img
+                Image img = (Image)Master.FindControl("imgPerfil");
+                img.ImageUrl = "~/Images/" + user.ImagenPerfil;
 
             }
             catch (Exception ex)

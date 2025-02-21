@@ -60,7 +60,7 @@ namespace negocio
 			AccesoDatos datos = new AccesoDatos();
 			try
 			{
-				datos.setearConsulta("SELECT id, email, pass, admin FROM USERS WHERE email = @email AND pass = @pass");
+				datos.setearConsulta("SELECT id, email, pass, admin, imagenPerfil FROM USERS WHERE email = @email AND pass = @pass");
 				datos.setearParametro("@email", trainee.Email);
                 datos.setearParametro("@pass", trainee.Pass);
 				datos.ejecutarLectura();
@@ -69,6 +69,11 @@ namespace negocio
 				{
 					trainee.Id = (int)datos.Lector["id"];
 					trainee.Admin = (bool)datos.Lector["admin"];
+					if(!(datos.Lector["imagenPerfil"] is DBNull))
+					{
+						trainee.ImagenPerfil = (string)datos.Lector["imagenPerfil"];
+
+					}
 					return true;
 				}
 
