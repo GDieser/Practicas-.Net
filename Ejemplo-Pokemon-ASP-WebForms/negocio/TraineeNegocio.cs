@@ -14,9 +14,11 @@ namespace negocio
 			AccesoDatos datos = new AccesoDatos();
 			try
 			{
-				datos.setearConsulta("UPDATE USERS SET imagenPerfil = @imagen WHERE Id = @id");
-				datos.setearParametro("@imagen", user.ImagenPerfil);
-				datos.setearParametro("@id", user.Id);
+				datos.setearConsulta("UPDATE USERS SET imagenPerfil = @imagen, Nombre = @nombre, Apellido = @apellido WHERE Id = @id");
+				datos.setearParametro("@imagen", user.ImagenPerfil != null ? user.ImagenPerfil : "");
+				datos.setearParametro("@nombre", user.Nombre);
+				datos.setearParametro("@apellido", user.Apellido);
+                datos.setearParametro("@id", user.Id);
 				datos.ejecutarAccion();
 
 			}

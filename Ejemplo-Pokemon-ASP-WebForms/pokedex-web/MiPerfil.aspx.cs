@@ -24,12 +24,19 @@ namespace pokedex_web
             try
             {
                 TraineeNegocio negocio = new TraineeNegocio();
-                //Escribir img
                 Trainee user = (Trainee)Session["trainee"];
-                string ruta = Server.MapPath("./Images/");
-                txtImagen.PostedFile.SaveAs(ruta + "perfil-" + user.Id + ".jpg");
-
-                user.ImagenPerfil = "perfil-" + user.Id + ".jpg";
+                
+                //Escribir img
+                if(txtImagen.PostedFile.FileName != "")
+                {
+                    string ruta = Server.MapPath("./Images/");
+                    txtImagen.PostedFile.SaveAs(ruta + "perfil-" + user.Id + ".jpg");
+                    user.ImagenPerfil = "perfil-" + user.Id + ".jpg";
+                }
+                
+                user.Nombre = txtNombre.Text;
+                user.Apellido = txtApellido.Text;  
+                
 
                 negocio.actualizar(user);
 
