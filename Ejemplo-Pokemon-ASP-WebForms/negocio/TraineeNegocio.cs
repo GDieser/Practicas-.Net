@@ -15,8 +15,10 @@ namespace negocio
 			try
 			{
 				datos.setearConsulta("UPDATE USERS SET imagenPerfil = @imagen, Nombre = @nombre, Apellido = @apellido, fechaNacimiento = @fecha WHERE Id = @id");
-				datos.setearParametro("@imagen", user.ImagenPerfil != null ? user.ImagenPerfil : "");
-				datos.setearParametro("@nombre", user.Nombre);
+                //datos.setearParametro("@imagen", user.ImagenPerfil != null ? user.ImagenPerfil : "");
+                //datos.setearParametro("@imagen", user.ImagenPerfil != null ? user.ImagenPerfil : (object)DBNull.Value);
+                datos.setearParametro("@imagen", (object)user.ImagenPerfil ?? DBNull.Value);
+                datos.setearParametro("@nombre", user.Nombre);
 				datos.setearParametro("@apellido", user.Apellido);
 				datos.setearParametro("@fecha", user.FechaNacimiento);
                 datos.setearParametro("@id", user.Id);
