@@ -17,5 +17,14 @@ namespace pokedex_web
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+
+        void Application_Error(object sender, EventArgs e)
+        {
+            Exception exc = Server.GetLastError();
+
+            Session.Add("Error", exc.ToString());
+            //Response.Redirect("Error.aspx");
+            Server.Transfer("Error.aspx");
+        }
     }
 }
