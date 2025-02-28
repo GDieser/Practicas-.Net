@@ -10,7 +10,18 @@ namespace dominio
     {
 
         public int Id { get; set; }
-        public string Email { get; set; }
+        private string email;
+        public string Email 
+        {
+            get { return email; }
+            set 
+            {
+                if (value != "")
+                    email = value;
+                else
+                    throw new Exception("Email vacío");
+            }
+        }
         public string Pass { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }

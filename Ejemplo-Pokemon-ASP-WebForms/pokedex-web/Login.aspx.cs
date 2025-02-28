@@ -23,6 +23,12 @@ namespace pokedex_web
 
             try
             {
+                if(string.IsNullOrEmpty(txtEmail.Text) || string.IsNullOrEmpty(txtPassword.Text))
+                {
+                    Session.Add("error", "Completar ambos campos");
+                    Response.Redirect("Error.aspx");
+                }
+
                 trainee.Email = txtEmail.Text;
                 trainee.Pass = txtPassword.Text;
 
