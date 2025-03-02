@@ -6,6 +6,22 @@
             font-size: 12px;
         }
     </style>
+    <script>
+        function validar() {
+            //Capturar el control 
+            const txtApellido = document.getElementById("txtApellido");
+            if (txtApellido.value == "") {
+                //alert("Debes cargar el apellido");
+                txtApellido.classList.add("is-invalid");
+                txtApellido.classList.remove("is-valid");
+                return false;
+            }
+            txtApellido.classList.remove("is-invalid");
+            txtApellido.classList.add("is-valid");
+            return true;
+        }
+        
+    </script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -23,15 +39,16 @@
             </div>
             <div class="mb-3">
                 <label class="form-label">Apellido</label>
-                <asp:TextBox runat="server" CssClass="form-control" ID="txtApellido" />
+                <asp:TextBox runat="server" ClientIDMode="Static" MaxLength="20" CssClass="form-control" ID="txtApellido" />
                 <!--
                 <asp:RangeValidator ErrorMessage="Fuera de rango" ControlToValidate="txtApellido" Type="Integer" MinimumValue="1" MaximumValue="50" runat="server" />
                 -->
                 <!--
                 <asp:RegularExpressionValidator ErrorMessage="Solo números" ValidationExpression="^[0-9]+$" ControlToValidate="txtApellido" runat="server" />
                     -->
+                <!--
                 <asp:RegularExpressionValidator ErrorMessage="Formato Email" ValidationExpression="^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$" ControlToValidate="txtApellido" runat="server" />
-
+                    -->
             </div>
             <div class="mb-3">
                 <label class="form-label">Fecha de Nacimiento</label>
@@ -52,7 +69,7 @@
     </div>
     <div class="row">
         <div class="col-md-4">
-            <asp:Button Text="Guardar" CssClass="btn btn-primary" OnClick="btnGuardar_Click" ID="btnGuardar" runat="server" />
+            <asp:Button Text="Guardar" OnClientClick="return validar()" CssClass="btn btn-primary" OnClick="btnGuardar_Click" ID="btnGuardar" runat="server" />
             <a href="/">Regresar</a>
         </div>
     </div>
