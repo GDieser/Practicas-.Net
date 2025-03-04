@@ -10,10 +10,12 @@
         function validar() {
             //Capturar el control 
             const txtApellido = document.getElementById("txtApellido");
+            const txtNombre = document.getElementById("txtNombre");
             if (txtApellido.value == "") {
                 //alert("Debes cargar el apellido");
                 txtApellido.classList.add("is-invalid");
                 txtApellido.classList.remove("is-valid");
+                txtNombre.classList.add("is-valid");
                 return false;
             }
             txtApellido.classList.remove("is-invalid");
@@ -34,8 +36,8 @@
             </div>
             <div class="mb-3">
                 <label class="form-label">Nombre</label>
-                <asp:TextBox runat="server" CssClass="form-control" ID="txtNombre"/>
-                <asp:RequiredFieldValidator CssClass="validacion" ErrorMessage="El nombre es requerido" ControlToValidate="txtNombre" runat="server" />
+                <asp:TextBox runat="server" ClientIDMode="Static" CssClass="form-control" ID="txtNombre"/>
+                <%--<asp:RequiredFieldValidator CssClass="validacion" ErrorMessage="El nombre es requerido" ControlToValidate="txtNombre" runat="server" />--%>
             </div>
             <div class="mb-3">
                 <label class="form-label">Apellido</label>
